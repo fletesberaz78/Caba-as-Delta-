@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CABAÑAS DEL DELTA</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header {
+      background: #1b1b1b;
+      color: white;
+      padding: 60px 20px 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #2a2a2a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 40px 20px; }
+    h2 { text-align: center; margin-bottom: 20px; }
+    .cabaña-info {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+    ul li::before { content: "✅ "; }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #2a2a2a;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CABAÑAS DEL DELTA</h1>
+    <p>La casa ideal para disfrutar de una estadía única en el delta.</p>
+    <div class="galeria">
+      <img src="https://i.ibb.co/jvvStF1F/IMG-20250521-WA0012.jpg" alt="Cabaña 1" />
+      <img src="https://i.ibb.co/kgSrS5w9/IMG-20250521-WA0011.jpg" alt="Cabaña 2" />
+      <img src="https://i.ibb.co/VWMwPT4m/IMG-20250521-WA0032.jpg" alt="Cabaña 3" />
+      <img src="https://i.ibb.co/QvpjkSfj/IMG-20250521-WA0008.jpg" alt="Cabaña 4" />
+    </div>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#tarifas">Tarifas</a>
+    <a href="#traslado">Traslados</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>¿Qué ofrecemos?</h2>
+    <ul>
+      <li>Parque privado</li>
+      <li>Muelle privado con amarra propia</li>
+      <li>DirecTV Prepago, WiFi, parrilla</li>
+      <li>Heladera con freezer, horno eléctrico, cocina a gas envasado</li>
+      <li>Calefacción en cada habitación</li>
+      <li>Aire acondicionado en el comedor</li>
+      <li>Termotanque eléctrico central</li>
+      <li>Bote almacén a 100 metros (carnicería, verdulería, etc.)</li>
+      <li>Bote sin motor para pesca personal</li>
+      <li>Juego de toallas por persona y sábanas para cada cama</li>
+    </ul>
+    <p class="cabaña-info">La casa es <strong>SOLO PARA VOS</strong>, no es una cabaña compartida. ¡Es un lugar exclusivo para tu descanso y privacidad!</p>
+  </section>
+
+  <section id="tarifas">
+    <h2>Tarifas</h2>
+    <p class="cabaña-info">
+      Valor por día: <strong>$80.000 por familia</strong><br/>
+      El precio incluye estadía completa y traslado ida y vuelta.
+    </p>
+  </section>
+
+  <section id="traslado">
+    <h2>Traslados</h2>
+    <p class="cabaña-info">
+      El horario de ingreso lo elegís vos, siempre dentro del rango de <strong>6:00 a 22:00</strong>.<br/>
+      Te pasamos a buscar por la <strong>Estación Fluvial - Muelle número 1</strong> y te llevamos hasta la isla. Al finalizar tu estadía, te llevamos de regreso.
+    </p>
+  </section>
+
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p class="cabaña-info">El traslado se realiza desde el Muelle N.º 1 de la Estación Fluvial. La ubicación exacta es:</p>
+    <div style="text-align: center;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.419882586469!2d-58.57826702484651!3d-34.592681272955756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca592b80ec55%3A0x2216f1f7f09dbff0!2sEstaci%C3%B3n%20Fluvial%20de%20Tigre!5e0!3m2!1ses-419!2sar!4v1716319999999"
+        width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p><a href="https://maps.app.goo.gl/LBzWDXXXvEjB8UAf6" target="_blank">Ver en Google Maps</a></p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto y Reservas</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje o fechas deseadas" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p style="text-align:center; margin-top: 15px;">O escribile directamente a Pablo al WhatsApp</p>
+  </section>
+
+  <a href="https://wa.me/5491162418628" class="whatsapp" target="_blank">WhatsApp</a>
+
+</body>
+</html>
